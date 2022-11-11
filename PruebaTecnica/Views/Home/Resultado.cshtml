@@ -1,0 +1,21 @@
+
+@model List<PruebaTecnica.Models.Producto>
+
+
+
+@{
+    ViewData["Title"] = "Resultados";
+    
+}
+
+@foreach(var product in Model)
+{
+   <div class="prod">
+    <div>Nombre:@product.productName</div> 
+    <div>ID:@product.productId</div> 
+    <div>Marca:@product.brand</div> 
+    <div>Categoria:@product.categories[0]</div> 
+   </div> 
+  
+ 
+}

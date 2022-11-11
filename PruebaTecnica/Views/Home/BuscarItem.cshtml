@@ -1,0 +1,20 @@
+@model PruebaTecnica.Models.DataItem
+
+@{
+    ViewData["Title"] = "Buscar Item";
+}
+
+<center><h2> Buscar producto por Id, Nombre ó Categoria<h2></center>
+ <form class="form" >
+ <label for="input_buscar">Producto a Buscar</label>  
+  <input type="text" id="nombre_buscar" name="Nombre"  placeholder="Nombre ó ID">
+  <label for="categ">Categoria</label> 
+  <select id="categoria" name="categ">
+  <option value="1" selected>Mujer</option>
+  <option value="2">Hombre</option>
+  <option value="3">Kids</option>   
+  <option value="55">Id</option>  
+  </select>
+ <br><br>
+ <input type="submit" value="Buscar" asp-action="Resultado">
+ </form>
